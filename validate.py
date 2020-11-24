@@ -35,7 +35,7 @@ def train(net, dataloader, optimizer, device, encoder):
 		optimizer.zero_grad()
 		
 		with torch.no_grad():
-			images = encoder(images)[1]
+			images = encoder(images)[0]
 
 		out = net(images)
 		loss = criterion(out, labels)
@@ -54,7 +54,7 @@ def test(net, dataloader, device, encoder):
 
 	for i, data in enumerate(dataloader):
 		images, labels = data[0].to(device), data[1].to(device)
-		images = encoder(images)[1]
+		images = encoder(images)[0]
 		
 		out = net(images)
 
@@ -82,9 +82,9 @@ state_dict = torch.load(model_path)
 model.load_state_dict(state_dict)
 
 lr = 0.001
-num_epoch = 1000
 momentum = 0.9
-batch_size = 1024
+num_epoch = 1000
+batch_size = 512
 num_classes = 10
 
 transform = transforms.Compose(
@@ -96,13 +96,14 @@ testset = torchvision.datasets.CIFAR10(root = data_path, train = False, download
 trainloader = torch.utils.data.DataLoader(trainset, batch_size = batch_size, shuffle = True, num_workers = 3)
 testloader = torch.utils.data.DataLoader(testset, batch_size = batch_size, shuffle = False, num_workers = 3)
 
-linear = Linear_Model(config["model"]["out_dim"], num_classes)
+linear = Linear_Model(512, num_classes)
 linear.to(device)
-optimizer = optim.SGD(linear.parameters(), lr = lr, momentum = momentum)
 
 test_error = np.zeros(num_epoch)
 
 for epoch in range(num_epoch):
+
+	optimizer = optim.SGD(linear.parameters(), lr = lr * (0.2 ** (epoch // 200)), momentum = momentum)
 
 	running_loss = train(linear, trainloader, optimizer, device, model)
 	print('epoch %d: running loss = %.3f' % (epoch + 1, running_loss))
@@ -112,7 +113,7 @@ for epoch in range(num_epoch):
 		test_error[epoch], test_loss = test(linear, testloader, device, model)
 		print('Test loss = %.3f, test error = %.3f %%\n' % (test_loss, test_error[epoch]))
 
-final_test_error, final_test_loss = test(linear, testloader, device, encoder)
+final_test_error, final_test_loss = test(linear, testloader, device, model)
 
 print(final_test_error, final_test_loss)
 print(test_error)

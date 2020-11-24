@@ -1,9 +1,9 @@
-batch_size: 512
-epochs: 100
+batch_size: 256
+epochs: 200
 eval_every_n_epochs: 1
 fine_tune_from: None
 log_every_n_steps: 50
-weight_decay: 10e-6
+weight_decay: 1e-6
 fp16_precision: False
 
 model:
