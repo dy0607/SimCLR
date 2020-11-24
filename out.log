@@ -1,0 +1,1809 @@
+Feature extractor: resnet18
+Files already downloaded and verified
+Files already downloaded and verified
+epoch 1: running loss = 1.712
+Test loss = 1.394, test error = 49.340 %
+
+epoch 2: running loss = 1.351
+Test loss = 1.366, test error = 49.250 %
+
+epoch 3: running loss = 1.344
+Test loss = 1.363, test error = 48.850 %
+
+epoch 4: running loss = 1.341
+Test loss = 1.361, test error = 48.980 %
+
+epoch 5: running loss = 1.341
+Test loss = 1.359, test error = 48.720 %
+
+epoch 6: running loss = 1.340
+Test loss = 1.360, test error = 49.130 %
+
+epoch 7: running loss = 1.337
+Test loss = 1.356, test error = 48.890 %
+
+epoch 8: running loss = 1.335
+Test loss = 1.355, test error = 48.850 %
+
+epoch 9: running loss = 1.335
+Test loss = 1.355, test error = 48.710 %
+
+epoch 10: running loss = 1.335
+Test loss = 1.353, test error = 48.550 %
+
+epoch 11: running loss = 1.333
+Test loss = 1.353, test error = 48.490 %
+
+epoch 12: running loss = 1.331
+Test loss = 1.351, test error = 48.800 %
+
+epoch 13: running loss = 1.331
+Test loss = 1.349, test error = 48.570 %
+
+epoch 14: running loss = 1.330
+Test loss = 1.349, test error = 48.350 %
+
+epoch 15: running loss = 1.329
+Test loss = 1.348, test error = 48.440 %
+
+epoch 16: running loss = 1.327
+Test loss = 1.346, test error = 48.660 %
+
+epoch 17: running loss = 1.327
+Test loss = 1.343, test error = 48.440 %
+
+epoch 18: running loss = 1.325
+Test loss = 1.344, test error = 48.220 %
+
+epoch 19: running loss = 1.324
+Test loss = 1.345, test error = 48.300 %
+
+epoch 20: running loss = 1.324
+Test loss = 1.342, test error = 48.530 %
+
+epoch 21: running loss = 1.323
+Test loss = 1.346, test error = 48.570 %
+
+epoch 22: running loss = 1.322
+Test loss = 1.342, test error = 48.390 %
+
+epoch 23: running loss = 1.320
+Test loss = 1.344, test error = 48.360 %
+
+epoch 24: running loss = 1.321
+Test loss = 1.341, test error = 48.400 %
+
+epoch 25: running loss = 1.319
+Test loss = 1.339, test error = 48.220 %
+
+epoch 26: running loss = 1.321
+Test loss = 1.335, test error = 48.040 %
+
+epoch 27: running loss = 1.319
+Test loss = 1.336, test error = 47.880 %
+
+epoch 28: running loss = 1.318
+Test loss = 1.339, test error = 48.290 %
+
+epoch 29: running loss = 1.317
+Test loss = 1.336, test error = 47.820 %
+
+epoch 30: running loss = 1.315
+Test loss = 1.334, test error = 48.300 %
+
+epoch 31: running loss = 1.315
+Test loss = 1.333, test error = 48.210 %
+
+epoch 32: running loss = 1.315
+Test loss = 1.333, test error = 48.160 %
+
+epoch 33: running loss = 1.314
+Test loss = 1.335, test error = 48.370 %
+
+epoch 34: running loss = 1.313
+Test loss = 1.332, test error = 48.290 %
+
+epoch 35: running loss = 1.313
+Test loss = 1.329, test error = 48.080 %
+
+epoch 36: running loss = 1.312
+Test loss = 1.332, test error = 48.190 %
+
+epoch 37: running loss = 1.312
+Test loss = 1.330, test error = 47.920 %
+
+epoch 38: running loss = 1.311
+Test loss = 1.329, test error = 47.990 %
+
+epoch 39: running loss = 1.310
+Test loss = 1.330, test error = 47.930 %
+
+epoch 40: running loss = 1.310
+Test loss = 1.326, test error = 47.840 %
+
+epoch 41: running loss = 1.308
+Test loss = 1.330, test error = 48.140 %
+
+epoch 42: running loss = 1.308
+Test loss = 1.331, test error = 48.350 %
+
+epoch 43: running loss = 1.308
+Test loss = 1.327, test error = 47.990 %
+
+epoch 44: running loss = 1.308
+Test loss = 1.327, test error = 48.010 %
+
+epoch 45: running loss = 1.306
+Test loss = 1.327, test error = 48.000 %
+
+epoch 46: running loss = 1.306
+Test loss = 1.326, test error = 48.040 %
+
+epoch 47: running loss = 1.305
+Test loss = 1.325, test error = 48.370 %
+
+epoch 48: running loss = 1.305
+Test loss = 1.324, test error = 48.090 %
+
+epoch 49: running loss = 1.304
+Test loss = 1.324, test error = 48.180 %
+
+epoch 50: running loss = 1.303
+Test loss = 1.325, test error = 48.070 %
+
+epoch 51: running loss = 1.303
+Test loss = 1.322, test error = 47.880 %
+
+epoch 52: running loss = 1.302
+Test loss = 1.323, test error = 48.050 %
+
+epoch 53: running loss = 1.303
+Test loss = 1.321, test error = 47.670 %
+
+epoch 54: running loss = 1.302
+Test loss = 1.323, test error = 47.700 %
+
+epoch 55: running loss = 1.302
+Test loss = 1.321, test error = 47.980 %
+
+epoch 56: running loss = 1.301
+Test loss = 1.323, test error = 47.910 %
+
+epoch 57: running loss = 1.301
+Test loss = 1.317, test error = 47.550 %
+
+epoch 58: running loss = 1.299
+Test loss = 1.318, test error = 47.410 %
+
+epoch 59: running loss = 1.299
+Test loss = 1.318, test error = 47.940 %
+
+epoch 60: running loss = 1.298
+Test loss = 1.317, test error = 47.530 %
+
+epoch 61: running loss = 1.299
+Test loss = 1.319, test error = 47.940 %
+
+epoch 62: running loss = 1.297
+Test loss = 1.319, test error = 47.740 %
+
+epoch 63: running loss = 1.298
+Test loss = 1.318, test error = 47.380 %
+
+epoch 64: running loss = 1.298
+Test loss = 1.316, test error = 47.850 %
+
+epoch 65: running loss = 1.296
+Test loss = 1.316, test error = 47.760 %
+
+epoch 66: running loss = 1.295
+Test loss = 1.314, test error = 47.480 %
+
+epoch 67: running loss = 1.296
+Test loss = 1.314, test error = 47.350 %
+
+epoch 68: running loss = 1.296
+Test loss = 1.315, test error = 47.800 %
+
+epoch 69: running loss = 1.296
+Test loss = 1.314, test error = 47.640 %
+
+epoch 70: running loss = 1.296
+Test loss = 1.314, test error = 47.760 %
+
+epoch 71: running loss = 1.294
+Test loss = 1.312, test error = 47.680 %
+
+epoch 72: running loss = 1.295
+Test loss = 1.313, test error = 47.680 %
+
+epoch 73: running loss = 1.293
+Test loss = 1.312, test error = 47.600 %
+
+epoch 74: running loss = 1.294
+Test loss = 1.314, test error = 47.710 %
+
+epoch 75: running loss = 1.292
+Test loss = 1.313, test error = 47.660 %
+
+epoch 76: running loss = 1.292
+Test loss = 1.312, test error = 47.660 %
+
+epoch 77: running loss = 1.292
+Test loss = 1.310, test error = 47.580 %
+
+epoch 78: running loss = 1.290
+Test loss = 1.312, test error = 47.510 %
+
+epoch 79: running loss = 1.290
+Test loss = 1.309, test error = 47.350 %
+
+epoch 80: running loss = 1.291
+Test loss = 1.311, test error = 47.670 %
+
+epoch 81: running loss = 1.290
+Test loss = 1.310, test error = 47.750 %
+
+epoch 82: running loss = 1.290
+Test loss = 1.309, test error = 47.470 %
+
+epoch 83: running loss = 1.290
+Test loss = 1.310, test error = 47.590 %
+
+epoch 84: running loss = 1.289
+Test loss = 1.310, test error = 47.810 %
+
+epoch 85: running loss = 1.290
+Test loss = 1.309, test error = 47.160 %
+
+epoch 86: running loss = 1.288
+Test loss = 1.306, test error = 47.280 %
+
+epoch 87: running loss = 1.288
+Test loss = 1.311, test error = 47.320 %
+
+epoch 88: running loss = 1.288
+Test loss = 1.307, test error = 47.460 %
+
+epoch 89: running loss = 1.288
+Test loss = 1.306, test error = 47.420 %
+
+epoch 90: running loss = 1.289
+Test loss = 1.310, test error = 47.730 %
+
+epoch 91: running loss = 1.288
+Test loss = 1.309, test error = 47.440 %
+
+epoch 92: running loss = 1.288
+Test loss = 1.305, test error = 47.370 %
+
+epoch 93: running loss = 1.286
+Test loss = 1.309, test error = 47.480 %
+
+epoch 94: running loss = 1.286
+Test loss = 1.307, test error = 47.390 %
+
+epoch 95: running loss = 1.286
+Test loss = 1.304, test error = 47.320 %
+
+epoch 96: running loss = 1.286
+Test loss = 1.304, test error = 47.280 %
+
+epoch 97: running loss = 1.285
+Test loss = 1.306, test error = 47.280 %
+
+epoch 98: running loss = 1.286
+Test loss = 1.305, test error = 47.380 %
+
+epoch 99: running loss = 1.285
+Test loss = 1.305, test error = 47.230 %
+
+epoch 100: running loss = 1.285
+Test loss = 1.305, test error = 47.200 %
+
+epoch 101: running loss = 1.284
+Test loss = 1.302, test error = 46.920 %
+
+epoch 102: running loss = 1.283
+Test loss = 1.303, test error = 47.510 %
+
+epoch 103: running loss = 1.283
+Test loss = 1.303, test error = 47.270 %
+
+epoch 104: running loss = 1.283
+Test loss = 1.302, test error = 47.470 %
+
+epoch 105: running loss = 1.283
+Test loss = 1.302, test error = 47.530 %
+
+epoch 106: running loss = 1.283
+Test loss = 1.303, test error = 47.290 %
+
+epoch 107: running loss = 1.283
+Test loss = 1.302, test error = 47.300 %
+
+epoch 108: running loss = 1.282
+Test loss = 1.302, test error = 47.470 %
+
+epoch 109: running loss = 1.281
+Test loss = 1.302, test error = 47.390 %
+
+epoch 110: running loss = 1.282
+Test loss = 1.302, test error = 47.170 %
+
+epoch 111: running loss = 1.282
+Test loss = 1.302, test error = 47.360 %
+
+epoch 112: running loss = 1.280
+Test loss = 1.302, test error = 47.250 %
+
+epoch 113: running loss = 1.280
+Test loss = 1.301, test error = 47.150 %
+
+epoch 114: running loss = 1.280
+Test loss = 1.300, test error = 47.100 %
+
+epoch 115: running loss = 1.281
+Test loss = 1.301, test error = 47.410 %
+
+epoch 116: running loss = 1.280
+Test loss = 1.299, test error = 47.270 %
+
+epoch 117: running loss = 1.280
+Test loss = 1.300, test error = 47.130 %
+
+epoch 118: running loss = 1.280
+Test loss = 1.301, test error = 47.260 %
+
+epoch 119: running loss = 1.279
+Test loss = 1.300, test error = 47.360 %
+
+epoch 120: running loss = 1.280
+Test loss = 1.301, test error = 47.300 %
+
+epoch 121: running loss = 1.278
+Test loss = 1.299, test error = 47.260 %
+
+epoch 122: running loss = 1.277
+Test loss = 1.300, test error = 47.170 %
+
+epoch 123: running loss = 1.278
+Test loss = 1.297, test error = 47.100 %
+
+epoch 124: running loss = 1.278
+Test loss = 1.296, test error = 46.840 %
+
+epoch 125: running loss = 1.279
+Test loss = 1.297, test error = 46.900 %
+
+epoch 126: running loss = 1.278
+Test loss = 1.296, test error = 47.300 %
+
+epoch 127: running loss = 1.277
+Test loss = 1.298, test error = 47.020 %
+
+epoch 128: running loss = 1.278
+Test loss = 1.297, test error = 46.960 %
+
+epoch 129: running loss = 1.276
+Test loss = 1.297, test error = 47.210 %
+
+epoch 130: running loss = 1.276
+Test loss = 1.296, test error = 47.000 %
+
+epoch 131: running loss = 1.276
+Test loss = 1.296, test error = 47.070 %
+
+epoch 132: running loss = 1.277
+Test loss = 1.296, test error = 47.090 %
+
+epoch 133: running loss = 1.275
+Test loss = 1.296, test error = 47.290 %
+
+epoch 134: running loss = 1.276
+Test loss = 1.294, test error = 46.770 %
+
+epoch 135: running loss = 1.275
+Test loss = 1.297, test error = 47.140 %
+
+epoch 136: running loss = 1.276
+Test loss = 1.297, test error = 47.020 %
+
+epoch 137: running loss = 1.275
+Test loss = 1.298, test error = 47.150 %
+
+epoch 138: running loss = 1.275
+Test loss = 1.296, test error = 47.320 %
+
+epoch 139: running loss = 1.275
+Test loss = 1.295, test error = 47.250 %
+
+epoch 140: running loss = 1.275
+Test loss = 1.295, test error = 47.150 %
+
+epoch 141: running loss = 1.274
+Test loss = 1.293, test error = 47.320 %
+
+epoch 142: running loss = 1.273
+Test loss = 1.296, test error = 47.240 %
+
+epoch 143: running loss = 1.274
+Test loss = 1.296, test error = 47.220 %
+
+epoch 144: running loss = 1.274
+Test loss = 1.293, test error = 46.920 %
+
+epoch 145: running loss = 1.274
+Test loss = 1.294, test error = 46.920 %
+
+epoch 146: running loss = 1.273
+Test loss = 1.294, test error = 46.960 %
+
+epoch 147: running loss = 1.272
+Test loss = 1.295, test error = 46.950 %
+
+epoch 148: running loss = 1.271
+Test loss = 1.294, test error = 46.770 %
+
+epoch 149: running loss = 1.273
+Test loss = 1.294, test error = 47.100 %
+
+epoch 150: running loss = 1.273
+Test loss = 1.293, test error = 47.110 %
+
+epoch 151: running loss = 1.272
+Test loss = 1.293, test error = 47.180 %
+
+epoch 152: running loss = 1.272
+Test loss = 1.291, test error = 47.140 %
+
+epoch 153: running loss = 1.272
+Test loss = 1.293, test error = 47.010 %
+
+epoch 154: running loss = 1.272
+Test loss = 1.291, test error = 47.170 %
+
+epoch 155: running loss = 1.270
+Test loss = 1.292, test error = 47.020 %
+
+epoch 156: running loss = 1.271
+Test loss = 1.293, test error = 47.540 %
+
+epoch 157: running loss = 1.271
+Test loss = 1.290, test error = 46.870 %
+
+epoch 158: running loss = 1.270
+Test loss = 1.292, test error = 47.040 %
+
+epoch 159: running loss = 1.270
+Test loss = 1.293, test error = 46.990 %
+
+epoch 160: running loss = 1.270
+Test loss = 1.292, test error = 46.990 %
+
+epoch 161: running loss = 1.269
+Test loss = 1.291, test error = 46.820 %
+
+epoch 162: running loss = 1.270
+Test loss = 1.289, test error = 46.960 %
+
+epoch 163: running loss = 1.269
+Test loss = 1.291, test error = 46.920 %
+
+epoch 164: running loss = 1.270
+Test loss = 1.292, test error = 46.930 %
+
+epoch 165: running loss = 1.270
+Test loss = 1.290, test error = 47.100 %
+
+epoch 166: running loss = 1.269
+Test loss = 1.290, test error = 46.950 %
+
+epoch 167: running loss = 1.270
+Test loss = 1.289, test error = 46.620 %
+
+epoch 168: running loss = 1.269
+Test loss = 1.291, test error = 47.080 %
+
+epoch 169: running loss = 1.269
+Test loss = 1.288, test error = 47.000 %
+
+epoch 170: running loss = 1.269
+Test loss = 1.289, test error = 47.050 %
+
+epoch 171: running loss = 1.267
+Test loss = 1.290, test error = 46.870 %
+
+epoch 172: running loss = 1.268
+Test loss = 1.289, test error = 46.950 %
+
+epoch 173: running loss = 1.268
+Test loss = 1.290, test error = 47.000 %
+
+epoch 174: running loss = 1.268
+Test loss = 1.286, test error = 46.520 %
+
+epoch 175: running loss = 1.267
+Test loss = 1.289, test error = 46.770 %
+
+epoch 176: running loss = 1.267
+Test loss = 1.289, test error = 46.680 %
+
+epoch 177: running loss = 1.266
+Test loss = 1.287, test error = 46.870 %
+
+epoch 178: running loss = 1.266
+Test loss = 1.287, test error = 46.880 %
+
+epoch 179: running loss = 1.267
+Test loss = 1.288, test error = 46.940 %
+
+epoch 180: running loss = 1.267
+Test loss = 1.289, test error = 46.810 %
+
+epoch 181: running loss = 1.267
+Test loss = 1.288, test error = 46.900 %
+
+epoch 182: running loss = 1.266
+Test loss = 1.288, test error = 46.730 %
+
+epoch 183: running loss = 1.265
+Test loss = 1.285, test error = 46.950 %
+
+epoch 184: running loss = 1.266
+Test loss = 1.290, test error = 46.380 %
+
+epoch 185: running loss = 1.265
+Test loss = 1.287, test error = 46.920 %
+
+epoch 186: running loss = 1.266
+Test loss = 1.286, test error = 46.840 %
+
+epoch 187: running loss = 1.265
+Test loss = 1.286, test error = 46.770 %
+
+epoch 188: running loss = 1.265
+Test loss = 1.285, test error = 46.670 %
+
+epoch 189: running loss = 1.266
+Test loss = 1.284, test error = 46.870 %
+
+epoch 190: running loss = 1.265
+Test loss = 1.286, test error = 46.890 %
+
+epoch 191: running loss = 1.266
+Test loss = 1.284, test error = 46.590 %
+
+epoch 192: running loss = 1.265
+Test loss = 1.287, test error = 46.820 %
+
+epoch 193: running loss = 1.265
+Test loss = 1.286, test error = 46.950 %
+
+epoch 194: running loss = 1.263
+Test loss = 1.285, test error = 46.890 %
+
+epoch 195: running loss = 1.265
+Test loss = 1.285, test error = 46.880 %
+
+epoch 196: running loss = 1.265
+Test loss = 1.283, test error = 46.910 %
+
+epoch 197: running loss = 1.264
+Test loss = 1.285, test error = 46.740 %
+
+epoch 198: running loss = 1.263
+Test loss = 1.286, test error = 46.660 %
+
+epoch 199: running loss = 1.263
+Test loss = 1.288, test error = 47.090 %
+
+epoch 200: running loss = 1.264
+Test loss = 1.283, test error = 46.740 %
+
+epoch 201: running loss = 1.264
+Test loss = 1.288, test error = 46.800 %
+
+epoch 202: running loss = 1.265
+Test loss = 1.287, test error = 46.960 %
+
+epoch 203: running loss = 1.263
+Test loss = 1.287, test error = 46.680 %
+
+epoch 204: running loss = 1.263
+Test loss = 1.283, test error = 46.540 %
+
+epoch 205: running loss = 1.261
+Test loss = 1.285, test error = 46.710 %
+
+epoch 206: running loss = 1.262
+Test loss = 1.283, test error = 46.720 %
+
+epoch 207: running loss = 1.261
+Test loss = 1.282, test error = 46.890 %
+
+epoch 208: running loss = 1.262
+Test loss = 1.283, test error = 46.450 %
+
+epoch 209: running loss = 1.263
+Test loss = 1.283, test error = 46.790 %
+
+epoch 210: running loss = 1.262
+Test loss = 1.284, test error = 46.550 %
+
+epoch 211: running loss = 1.262
+Test loss = 1.283, test error = 46.770 %
+
+epoch 212: running loss = 1.261
+Test loss = 1.284, test error = 46.530 %
+
+epoch 213: running loss = 1.261
+Test loss = 1.283, test error = 46.610 %
+
+epoch 214: running loss = 1.260
+Test loss = 1.283, test error = 46.950 %
+
+epoch 215: running loss = 1.261
+Test loss = 1.281, test error = 46.580 %
+
+epoch 216: running loss = 1.261
+Test loss = 1.283, test error = 46.700 %
+
+epoch 217: running loss = 1.262
+Test loss = 1.282, test error = 46.630 %
+
+epoch 218: running loss = 1.261
+Test loss = 1.282, test error = 46.860 %
+
+epoch 219: running loss = 1.260
+Test loss = 1.282, test error = 46.760 %
+
+epoch 220: running loss = 1.260
+Test loss = 1.280, test error = 46.750 %
+
+epoch 221: running loss = 1.260
+Test loss = 1.281, test error = 46.610 %
+
+epoch 222: running loss = 1.260
+Test loss = 1.281, test error = 46.810 %
+
+epoch 223: running loss = 1.260
+Test loss = 1.282, test error = 46.770 %
+
+epoch 224: running loss = 1.260
+Test loss = 1.284, test error = 46.650 %
+
+epoch 225: running loss = 1.259
+Test loss = 1.281, test error = 46.760 %
+
+epoch 226: running loss = 1.260
+Test loss = 1.282, test error = 46.420 %
+
+epoch 227: running loss = 1.259
+Test loss = 1.279, test error = 46.860 %
+
+epoch 228: running loss = 1.259
+Test loss = 1.281, test error = 46.690 %
+
+epoch 229: running loss = 1.259
+Test loss = 1.281, test error = 46.550 %
+
+epoch 230: running loss = 1.260
+Test loss = 1.282, test error = 46.520 %
+
+epoch 231: running loss = 1.258
+Test loss = 1.280, test error = 46.510 %
+
+epoch 232: running loss = 1.259
+Test loss = 1.281, test error = 46.680 %
+
+epoch 233: running loss = 1.260
+Test loss = 1.281, test error = 46.570 %
+
+epoch 234: running loss = 1.258
+Test loss = 1.281, test error = 46.710 %
+
+epoch 235: running loss = 1.259
+Test loss = 1.280, test error = 46.690 %
+
+epoch 236: running loss = 1.258
+Test loss = 1.280, test error = 46.400 %
+
+epoch 237: running loss = 1.257
+Test loss = 1.281, test error = 46.620 %
+
+epoch 238: running loss = 1.258
+Test loss = 1.278, test error = 46.550 %
+
+epoch 239: running loss = 1.258
+Test loss = 1.280, test error = 46.640 %
+
+epoch 240: running loss = 1.259
+Test loss = 1.277, test error = 46.390 %
+
+epoch 241: running loss = 1.258
+Test loss = 1.280, test error = 46.580 %
+
+epoch 242: running loss = 1.258
+Test loss = 1.281, test error = 46.740 %
+
+epoch 243: running loss = 1.257
+Test loss = 1.279, test error = 46.520 %
+
+epoch 244: running loss = 1.258
+Test loss = 1.279, test error = 46.560 %
+
+epoch 245: running loss = 1.257
+Test loss = 1.279, test error = 46.480 %
+
+epoch 246: running loss = 1.258
+Test loss = 1.278, test error = 46.520 %
+
+epoch 247: running loss = 1.257
+Test loss = 1.277, test error = 46.650 %
+
+epoch 248: running loss = 1.256
+Test loss = 1.280, test error = 46.810 %
+
+epoch 249: running loss = 1.256
+Test loss = 1.278, test error = 46.540 %
+
+epoch 250: running loss = 1.257
+Test loss = 1.279, test error = 46.410 %
+
+epoch 251: running loss = 1.256
+Test loss = 1.278, test error = 46.760 %
+
+epoch 252: running loss = 1.256
+Test loss = 1.278, test error = 46.530 %
+
+epoch 253: running loss = 1.256
+Test loss = 1.277, test error = 46.600 %
+
+epoch 254: running loss = 1.257
+Test loss = 1.277, test error = 46.510 %
+
+epoch 255: running loss = 1.257
+Test loss = 1.277, test error = 46.430 %
+
+epoch 256: running loss = 1.256
+Test loss = 1.277, test error = 46.810 %
+
+epoch 257: running loss = 1.256
+Test loss = 1.277, test error = 46.350 %
+
+epoch 258: running loss = 1.256
+Test loss = 1.280, test error = 46.330 %
+
+epoch 259: running loss = 1.256
+Test loss = 1.276, test error = 46.160 %
+
+epoch 260: running loss = 1.254
+Test loss = 1.277, test error = 46.440 %
+
+epoch 261: running loss = 1.255
+Test loss = 1.278, test error = 46.460 %
+
+epoch 262: running loss = 1.254
+Test loss = 1.275, test error = 46.310 %
+
+epoch 263: running loss = 1.256
+Test loss = 1.277, test error = 46.530 %
+
+epoch 264: running loss = 1.255
+Test loss = 1.279, test error = 46.300 %
+
+epoch 265: running loss = 1.254
+Test loss = 1.276, test error = 46.430 %
+
+epoch 266: running loss = 1.254
+Test loss = 1.276, test error = 46.540 %
+
+epoch 267: running loss = 1.254
+Test loss = 1.276, test error = 46.560 %
+
+epoch 268: running loss = 1.255
+Test loss = 1.278, test error = 46.730 %
+
+epoch 269: running loss = 1.254
+Test loss = 1.275, test error = 46.370 %
+
+epoch 270: running loss = 1.253
+Test loss = 1.276, test error = 46.510 %
+
+epoch 271: running loss = 1.254
+Test loss = 1.277, test error = 46.460 %
+
+epoch 272: running loss = 1.252
+Test loss = 1.276, test error = 46.440 %
+
+epoch 273: running loss = 1.253
+Test loss = 1.278, test error = 46.660 %
+
+epoch 274: running loss = 1.253
+Test loss = 1.277, test error = 46.860 %
+
+epoch 275: running loss = 1.253
+Test loss = 1.276, test error = 46.380 %
+
+epoch 276: running loss = 1.254
+Test loss = 1.276, test error = 46.520 %
+
+epoch 277: running loss = 1.254
+Test loss = 1.274, test error = 46.360 %
+
+epoch 278: running loss = 1.253
+Test loss = 1.274, test error = 46.770 %
+
+epoch 279: running loss = 1.253
+Test loss = 1.276, test error = 46.520 %
+
+epoch 280: running loss = 1.252
+Test loss = 1.274, test error = 46.470 %
+
+epoch 281: running loss = 1.253
+Test loss = 1.275, test error = 46.290 %
+
+epoch 282: running loss = 1.253
+Test loss = 1.275, test error = 46.570 %
+
+epoch 283: running loss = 1.253
+Test loss = 1.274, test error = 46.300 %
+
+epoch 284: running loss = 1.252
+Test loss = 1.275, test error = 46.720 %
+
+epoch 285: running loss = 1.252
+Test loss = 1.276, test error = 46.480 %
+
+epoch 286: running loss = 1.252
+Test loss = 1.272, test error = 46.390 %
+
+epoch 287: running loss = 1.251
+Test loss = 1.273, test error = 46.440 %
+
+epoch 288: running loss = 1.252
+Test loss = 1.274, test error = 46.560 %
+
+epoch 289: running loss = 1.252
+Test loss = 1.274, test error = 46.270 %
+
+epoch 290: running loss = 1.251
+Test loss = 1.274, test error = 46.400 %
+
+epoch 291: running loss = 1.252
+Test loss = 1.273, test error = 46.360 %
+
+epoch 292: running loss = 1.252
+Test loss = 1.272, test error = 46.190 %
+
+epoch 293: running loss = 1.250
+Test loss = 1.274, test error = 46.300 %
+
+epoch 294: running loss = 1.251
+Test loss = 1.273, test error = 46.180 %
+
+epoch 295: running loss = 1.252
+Test loss = 1.273, test error = 46.270 %
+
+epoch 296: running loss = 1.251
+Test loss = 1.273, test error = 46.520 %
+
+epoch 297: running loss = 1.251
+Test loss = 1.275, test error = 46.610 %
+
+epoch 298: running loss = 1.251
+Test loss = 1.272, test error = 46.210 %
+
+epoch 299: running loss = 1.251
+Test loss = 1.273, test error = 46.230 %
+
+epoch 300: running loss = 1.251
+Test loss = 1.272, test error = 46.450 %
+
+epoch 301: running loss = 1.250
+Test loss = 1.273, test error = 46.470 %
+
+epoch 302: running loss = 1.250
+Test loss = 1.273, test error = 46.420 %
+
+epoch 303: running loss = 1.250
+Test loss = 1.271, test error = 46.100 %
+
+epoch 304: running loss = 1.250
+Test loss = 1.274, test error = 46.390 %
+
+epoch 305: running loss = 1.251
+Test loss = 1.272, test error = 46.580 %
+
+epoch 306: running loss = 1.251
+Test loss = 1.273, test error = 46.180 %
+
+epoch 307: running loss = 1.250
+Test loss = 1.272, test error = 46.160 %
+
+epoch 308: running loss = 1.251
+Test loss = 1.273, test error = 46.340 %
+
+epoch 309: running loss = 1.250
+Test loss = 1.272, test error = 46.240 %
+
+epoch 310: running loss = 1.251
+Test loss = 1.271, test error = 46.060 %
+
+epoch 311: running loss = 1.249
+Test loss = 1.270, test error = 46.080 %
+
+epoch 312: running loss = 1.249
+Test loss = 1.271, test error = 46.290 %
+
+epoch 313: running loss = 1.249
+Test loss = 1.272, test error = 46.290 %
+
+epoch 314: running loss = 1.248
+Test loss = 1.271, test error = 46.540 %
+
+epoch 315: running loss = 1.248
+Test loss = 1.271, test error = 46.480 %
+
+epoch 316: running loss = 1.248
+Test loss = 1.271, test error = 46.330 %
+
+epoch 317: running loss = 1.249
+Test loss = 1.269, test error = 46.220 %
+
+epoch 318: running loss = 1.249
+Test loss = 1.271, test error = 46.230 %
+
+epoch 319: running loss = 1.249
+Test loss = 1.270, test error = 46.370 %
+
+epoch 320: running loss = 1.249
+Test loss = 1.272, test error = 46.180 %
+
+epoch 321: running loss = 1.249
+Test loss = 1.270, test error = 46.090 %
+
+epoch 322: running loss = 1.249
+Test loss = 1.271, test error = 46.240 %
+
+epoch 323: running loss = 1.248
+Test loss = 1.271, test error = 46.330 %
+
+epoch 324: running loss = 1.249
+Test loss = 1.270, test error = 46.110 %
+
+epoch 325: running loss = 1.249
+Test loss = 1.274, test error = 46.200 %
+
+epoch 326: running loss = 1.248
+Test loss = 1.272, test error = 46.340 %
+
+epoch 327: running loss = 1.248
+Test loss = 1.272, test error = 46.240 %
+
+epoch 328: running loss = 1.247
+Test loss = 1.268, test error = 46.320 %
+
+epoch 329: running loss = 1.247
+Test loss = 1.269, test error = 46.180 %
+
+epoch 330: running loss = 1.247
+Test loss = 1.269, test error = 46.330 %
+
+epoch 331: running loss = 1.246
+Test loss = 1.269, test error = 46.270 %
+
+epoch 332: running loss = 1.247
+Test loss = 1.269, test error = 46.100 %
+
+epoch 333: running loss = 1.246
+Test loss = 1.269, test error = 46.530 %
+
+epoch 334: running loss = 1.248
+Test loss = 1.269, test error = 46.080 %
+
+epoch 335: running loss = 1.247
+Test loss = 1.268, test error = 46.430 %
+
+epoch 336: running loss = 1.247
+Test loss = 1.268, test error = 46.260 %
+
+epoch 337: running loss = 1.246
+Test loss = 1.269, test error = 45.900 %
+
+epoch 338: running loss = 1.247
+Test loss = 1.270, test error = 46.180 %
+
+epoch 339: running loss = 1.246
+Test loss = 1.268, test error = 46.110 %
+
+epoch 340: running loss = 1.246
+Test loss = 1.268, test error = 46.140 %
+
+epoch 341: running loss = 1.246
+Test loss = 1.272, test error = 46.200 %
+
+epoch 342: running loss = 1.247
+Test loss = 1.270, test error = 46.140 %
+
+epoch 343: running loss = 1.247
+Test loss = 1.270, test error = 46.210 %
+
+epoch 344: running loss = 1.246
+Test loss = 1.268, test error = 46.240 %
+
+epoch 345: running loss = 1.245
+Test loss = 1.268, test error = 46.310 %
+
+epoch 346: running loss = 1.245
+Test loss = 1.270, test error = 46.530 %
+
+epoch 347: running loss = 1.247
+Test loss = 1.267, test error = 46.170 %
+
+epoch 348: running loss = 1.246
+Test loss = 1.273, test error = 46.560 %
+
+epoch 349: running loss = 1.246
+Test loss = 1.269, test error = 46.370 %
+
+epoch 350: running loss = 1.246
+Test loss = 1.268, test error = 46.200 %
+
+epoch 351: running loss = 1.246
+Test loss = 1.268, test error = 46.300 %
+
+epoch 352: running loss = 1.245
+Test loss = 1.268, test error = 46.150 %
+
+epoch 353: running loss = 1.246
+Test loss = 1.267, test error = 46.230 %
+
+epoch 354: running loss = 1.245
+Test loss = 1.268, test error = 46.410 %
+
+epoch 355: running loss = 1.245
+Test loss = 1.270, test error = 46.170 %
+
+epoch 356: running loss = 1.246
+Test loss = 1.268, test error = 46.060 %
+
+epoch 357: running loss = 1.245
+Test loss = 1.266, test error = 46.310 %
+
+epoch 358: running loss = 1.244
+Test loss = 1.266, test error = 46.130 %
+
+epoch 359: running loss = 1.245
+Test loss = 1.268, test error = 46.330 %
+
+epoch 360: running loss = 1.245
+Test loss = 1.269, test error = 46.130 %
+
+epoch 361: running loss = 1.245
+Test loss = 1.266, test error = 46.140 %
+
+epoch 362: running loss = 1.244
+Test loss = 1.266, test error = 46.290 %
+
+epoch 363: running loss = 1.245
+Test loss = 1.270, test error = 46.180 %
+
+epoch 364: running loss = 1.245
+Test loss = 1.267, test error = 46.160 %
+
+epoch 365: running loss = 1.244
+Test loss = 1.268, test error = 46.210 %
+
+epoch 366: running loss = 1.245
+Test loss = 1.267, test error = 46.320 %
+
+epoch 367: running loss = 1.244
+Test loss = 1.267, test error = 46.120 %
+
+epoch 368: running loss = 1.243
+Test loss = 1.266, test error = 45.960 %
+
+epoch 369: running loss = 1.245
+Test loss = 1.270, test error = 46.060 %
+
+epoch 370: running loss = 1.245
+Test loss = 1.267, test error = 46.040 %
+
+epoch 371: running loss = 1.244
+Test loss = 1.264, test error = 46.140 %
+
+epoch 372: running loss = 1.243
+Test loss = 1.267, test error = 46.230 %
+
+epoch 373: running loss = 1.244
+Test loss = 1.265, test error = 46.040 %
+
+epoch 374: running loss = 1.243
+Test loss = 1.265, test error = 46.170 %
+
+epoch 375: running loss = 1.243
+Test loss = 1.265, test error = 46.010 %
+
+epoch 376: running loss = 1.244
+Test loss = 1.266, test error = 46.120 %
+
+epoch 377: running loss = 1.243
+Test loss = 1.270, test error = 46.390 %
+
+epoch 378: running loss = 1.244
+Test loss = 1.265, test error = 45.980 %
+
+epoch 379: running loss = 1.243
+Test loss = 1.268, test error = 46.390 %
+
+epoch 380: running loss = 1.243
+Test loss = 1.268, test error = 46.340 %
+
+epoch 381: running loss = 1.242
+Test loss = 1.266, test error = 46.200 %
+
+epoch 382: running loss = 1.243
+Test loss = 1.266, test error = 46.090 %
+
+epoch 383: running loss = 1.243
+Test loss = 1.269, test error = 46.540 %
+
+epoch 384: running loss = 1.243
+Test loss = 1.265, test error = 46.030 %
+
+epoch 385: running loss = 1.242
+Test loss = 1.265, test error = 46.050 %
+
+epoch 386: running loss = 1.243
+Test loss = 1.267, test error = 46.220 %
+
+epoch 387: running loss = 1.243
+Test loss = 1.264, test error = 46.250 %
+
+epoch 388: running loss = 1.243
+Test loss = 1.266, test error = 46.090 %
+
+epoch 389: running loss = 1.242
+Test loss = 1.266, test error = 46.340 %
+
+epoch 390: running loss = 1.242
+Test loss = 1.265, test error = 46.100 %
+
+epoch 391: running loss = 1.243
+Test loss = 1.267, test error = 46.210 %
+
+epoch 392: running loss = 1.242
+Test loss = 1.265, test error = 46.040 %
+
+epoch 393: running loss = 1.242
+Test loss = 1.265, test error = 46.030 %
+
+epoch 394: running loss = 1.242
+Test loss = 1.264, test error = 46.060 %
+
+epoch 395: running loss = 1.241
+Test loss = 1.264, test error = 45.860 %
+
+epoch 396: running loss = 1.242
+Test loss = 1.267, test error = 46.450 %
+
+epoch 397: running loss = 1.242
+Test loss = 1.264, test error = 46.080 %
+
+epoch 398: running loss = 1.242
+Test loss = 1.265, test error = 46.130 %
+
+epoch 399: running loss = 1.241
+Test loss = 1.264, test error = 46.060 %
+
+epoch 400: running loss = 1.242
+Test loss = 1.265, test error = 45.980 %
+
+epoch 401: running loss = 1.240
+Test loss = 1.263, test error = 45.940 %
+
+epoch 402: running loss = 1.241
+Test loss = 1.265, test error = 46.140 %
+
+epoch 403: running loss = 1.240
+Test loss = 1.265, test error = 46.160 %
+
+epoch 404: running loss = 1.241
+Test loss = 1.264, test error = 46.190 %
+
+epoch 405: running loss = 1.240
+Test loss = 1.263, test error = 46.070 %
+
+epoch 406: running loss = 1.241
+Test loss = 1.263, test error = 46.000 %
+
+epoch 407: running loss = 1.241
+Test loss = 1.266, test error = 46.040 %
+
+epoch 408: running loss = 1.240
+Test loss = 1.265, test error = 46.120 %
+
+epoch 409: running loss = 1.241
+Test loss = 1.264, test error = 46.070 %
+
+epoch 410: running loss = 1.240
+Test loss = 1.265, test error = 46.090 %
+
+epoch 411: running loss = 1.241
+Test loss = 1.265, test error = 45.890 %
+
+epoch 412: running loss = 1.241
+Test loss = 1.264, test error = 46.060 %
+
+epoch 413: running loss = 1.240
+Test loss = 1.265, test error = 46.210 %
+
+epoch 414: running loss = 1.240
+Test loss = 1.263, test error = 45.940 %
+
+epoch 415: running loss = 1.240
+Test loss = 1.266, test error = 46.290 %
+
+epoch 416: running loss = 1.241
+Test loss = 1.264, test error = 46.090 %
+
+epoch 417: running loss = 1.240
+Test loss = 1.264, test error = 46.170 %
+
+epoch 418: running loss = 1.240
+Test loss = 1.261, test error = 45.930 %
+
+epoch 419: running loss = 1.241
+Test loss = 1.263, test error = 45.900 %
+
+epoch 420: running loss = 1.240
+Test loss = 1.265, test error = 46.260 %
+
+epoch 421: running loss = 1.240
+Test loss = 1.264, test error = 46.010 %
+
+epoch 422: running loss = 1.239
+Test loss = 1.261, test error = 45.900 %
+
+epoch 423: running loss = 1.239
+Test loss = 1.262, test error = 45.950 %
+
+epoch 424: running loss = 1.240
+Test loss = 1.265, test error = 46.100 %
+
+epoch 425: running loss = 1.239
+Test loss = 1.263, test error = 46.050 %
+
+epoch 426: running loss = 1.239
+Test loss = 1.262, test error = 46.050 %
+
+epoch 427: running loss = 1.240
+Test loss = 1.261, test error = 46.030 %
+
+epoch 428: running loss = 1.239
+Test loss = 1.262, test error = 46.030 %
+
+epoch 429: running loss = 1.239
+Test loss = 1.260, test error = 45.960 %
+
+epoch 430: running loss = 1.239
+Test loss = 1.261, test error = 45.800 %
+
+epoch 431: running loss = 1.238
+Test loss = 1.261, test error = 45.990 %
+
+epoch 432: running loss = 1.240
+Test loss = 1.262, test error = 45.950 %
+
+epoch 433: running loss = 1.239
+Test loss = 1.263, test error = 46.080 %
+
+epoch 434: running loss = 1.238
+Test loss = 1.263, test error = 46.060 %
+
+epoch 435: running loss = 1.238
+Test loss = 1.262, test error = 45.850 %
+
+epoch 436: running loss = 1.238
+Test loss = 1.262, test error = 45.890 %
+
+epoch 437: running loss = 1.238
+Test loss = 1.262, test error = 45.960 %
+
+epoch 438: running loss = 1.239
+Test loss = 1.261, test error = 45.890 %
+
+epoch 439: running loss = 1.239
+Test loss = 1.261, test error = 46.090 %
+
+epoch 440: running loss = 1.238
+Test loss = 1.262, test error = 46.240 %
+
+epoch 441: running loss = 1.238
+Test loss = 1.260, test error = 46.020 %
+
+epoch 442: running loss = 1.238
+Test loss = 1.260, test error = 45.850 %
+
+epoch 443: running loss = 1.239
+Test loss = 1.262, test error = 46.190 %
+
+epoch 444: running loss = 1.237
+Test loss = 1.261, test error = 46.020 %
+
+epoch 445: running loss = 1.238
+Test loss = 1.260, test error = 46.230 %
+
+epoch 446: running loss = 1.238
+Test loss = 1.261, test error = 46.020 %
+
+epoch 447: running loss = 1.237
+Test loss = 1.262, test error = 46.060 %
+
+epoch 448: running loss = 1.237
+Test loss = 1.261, test error = 46.020 %
+
+epoch 449: running loss = 1.239
+Test loss = 1.262, test error = 45.900 %
+
+epoch 450: running loss = 1.239
+Test loss = 1.260, test error = 45.800 %
+
+epoch 451: running loss = 1.238
+Test loss = 1.264, test error = 45.960 %
+
+epoch 452: running loss = 1.238
+Test loss = 1.260, test error = 46.000 %
+
+epoch 453: running loss = 1.237
+Test loss = 1.260, test error = 45.730 %
+
+epoch 454: running loss = 1.237
+Test loss = 1.260, test error = 45.940 %
+
+epoch 455: running loss = 1.237
+Test loss = 1.258, test error = 45.690 %
+
+epoch 456: running loss = 1.236
+Test loss = 1.261, test error = 45.820 %
+
+epoch 457: running loss = 1.237
+Test loss = 1.260, test error = 45.900 %
+
+epoch 458: running loss = 1.237
+Test loss = 1.262, test error = 46.220 %
+
+epoch 459: running loss = 1.236
+Test loss = 1.260, test error = 45.920 %
+
+epoch 460: running loss = 1.236
+Test loss = 1.260, test error = 46.210 %
+
+epoch 461: running loss = 1.237
+Test loss = 1.260, test error = 45.850 %
+
+epoch 462: running loss = 1.236
+Test loss = 1.261, test error = 45.980 %
+
+epoch 463: running loss = 1.237
+Test loss = 1.261, test error = 45.710 %
+
+epoch 464: running loss = 1.236
+Test loss = 1.260, test error = 45.960 %
+
+epoch 465: running loss = 1.237
+Test loss = 1.260, test error = 46.150 %
+
+epoch 466: running loss = 1.238
+Test loss = 1.261, test error = 46.040 %
+
+epoch 467: running loss = 1.236
+Test loss = 1.259, test error = 45.850 %
+
+epoch 468: running loss = 1.236
+Test loss = 1.258, test error = 45.910 %
+
+epoch 469: running loss = 1.236
+Test loss = 1.262, test error = 46.270 %
+
+epoch 470: running loss = 1.237
+Test loss = 1.259, test error = 45.920 %
+
+epoch 471: running loss = 1.235
+Test loss = 1.261, test error = 46.140 %
+
+epoch 472: running loss = 1.237
+Test loss = 1.259, test error = 45.850 %
+
+epoch 473: running loss = 1.235
+Test loss = 1.259, test error = 46.430 %
+
+epoch 474: running loss = 1.235
+Test loss = 1.260, test error = 45.960 %
+
+epoch 475: running loss = 1.234
+Test loss = 1.258, test error = 45.990 %
+
+epoch 476: running loss = 1.235
+Test loss = 1.259, test error = 45.710 %
+
+epoch 477: running loss = 1.235
+Test loss = 1.261, test error = 45.650 %
+
+epoch 478: running loss = 1.235
+Test loss = 1.258, test error = 45.840 %
+
+epoch 479: running loss = 1.235
+Test loss = 1.257, test error = 45.970 %
+
+epoch 480: running loss = 1.235
+Test loss = 1.258, test error = 45.430 %
+
+epoch 481: running loss = 1.235
+Test loss = 1.259, test error = 45.740 %
+
+epoch 482: running loss = 1.235
+Test loss = 1.260, test error = 46.010 %
+
+epoch 483: running loss = 1.235
+Test loss = 1.260, test error = 46.010 %
+
+epoch 484: running loss = 1.235
+Test loss = 1.258, test error = 45.890 %
+
+epoch 485: running loss = 1.234
+Test loss = 1.258, test error = 45.680 %
+
+epoch 486: running loss = 1.234
+Test loss = 1.257, test error = 45.950 %
+
+epoch 487: running loss = 1.234
+Test loss = 1.259, test error = 46.120 %
+
+epoch 488: running loss = 1.234
+Test loss = 1.260, test error = 45.840 %
+
+epoch 489: running loss = 1.235
+Test loss = 1.259, test error = 45.930 %
+
+epoch 490: running loss = 1.235
+Test loss = 1.258, test error = 45.870 %
+
+epoch 491: running loss = 1.234
+Test loss = 1.259, test error = 46.040 %
+
+epoch 492: running loss = 1.234
+Test loss = 1.259, test error = 46.010 %
+
+epoch 493: running loss = 1.234
+Test loss = 1.258, test error = 45.930 %
+
+epoch 494: running loss = 1.233
+Test loss = 1.258, test error = 45.780 %
+
+epoch 495: running loss = 1.233
+Test loss = 1.262, test error = 46.330 %
+
+epoch 496: running loss = 1.235
+Test loss = 1.257, test error = 45.940 %
+
+epoch 497: running loss = 1.234
+Test loss = 1.257, test error = 45.980 %
+
+epoch 498: running loss = 1.234
+Test loss = 1.259, test error = 46.010 %
+
+epoch 499: running loss = 1.234
+Test loss = 1.258, test error = 45.580 %
+
+epoch 500: running loss = 1.233
+Test loss = 1.257, test error = 45.790 %
+
+epoch 501: running loss = 1.233
+Test loss = 1.257, test error = 45.860 %
+
+epoch 502: running loss = 1.234
+Test loss = 1.256, test error = 45.690 %
+
+epoch 503: running loss = 1.234
+Test loss = 1.258, test error = 45.760 %
+
+epoch 504: running loss = 1.233
+Test loss = 1.258, test error = 45.950 %
+
+epoch 505: running loss = 1.233
+Test loss = 1.257, test error = 45.740 %
+
+epoch 506: running loss = 1.233
+Test loss = 1.258, test error = 45.940 %
+
+epoch 507: running loss = 1.233
+Test loss = 1.261, test error = 45.940 %
+
+epoch 508: running loss = 1.234
+Test loss = 1.259, test error = 46.050 %
+
+epoch 509: running loss = 1.234
+Test loss = 1.257, test error = 45.770 %
+
+epoch 510: running loss = 1.233
+Test loss = 1.259, test error = 45.860 %
+
+epoch 511: running loss = 1.234
+Test loss = 1.255, test error = 46.000 %
+
+epoch 512: running loss = 1.233
+Test loss = 1.258, test error = 45.850 %
+
+epoch 513: running loss = 1.232
+Test loss = 1.258, test error = 45.770 %
+
+epoch 514: running loss = 1.233
+Test loss = 1.259, test error = 46.130 %
+
+epoch 515: running loss = 1.233
+Test loss = 1.255, test error = 45.690 %
+
+epoch 516: running loss = 1.233
+Test loss = 1.255, test error = 45.850 %
+
+epoch 517: running loss = 1.232
+Test loss = 1.255, test error = 45.540 %
+
+epoch 518: running loss = 1.233
+Test loss = 1.256, test error = 45.690 %
+
+epoch 519: running loss = 1.232
+Test loss = 1.257, test error = 45.630 %
+
+epoch 520: running loss = 1.232
+Test loss = 1.255, test error = 45.620 %
+
+epoch 521: running loss = 1.232
+Test loss = 1.257, test error = 45.800 %
+
+epoch 522: running loss = 1.233
+Test loss = 1.258, test error = 45.740 %
+
+epoch 523: running loss = 1.233
+Test loss = 1.256, test error = 45.830 %
+
+epoch 524: running loss = 1.232
+Test loss = 1.257, test error = 45.830 %
+
+epoch 525: running loss = 1.232
+Test loss = 1.256, test error = 45.790 %
+
+epoch 526: running loss = 1.233
+Test loss = 1.256, test error = 45.880 %
+
+epoch 527: running loss = 1.232
+Test loss = 1.255, test error = 45.560 %
+
+epoch 528: running loss = 1.231
+Test loss = 1.255, test error = 45.520 %
+
+epoch 529: running loss = 1.232
+Test loss = 1.255, test error = 45.630 %
+
+epoch 530: running loss = 1.232
+Test loss = 1.254, test error = 45.720 %
+
+epoch 531: running loss = 1.232
+Test loss = 1.254, test error = 45.840 %
+
+epoch 532: running loss = 1.231
+Test loss = 1.256, test error = 45.750 %
+
+epoch 533: running loss = 1.231
+Test loss = 1.259, test error = 45.770 %
+
+epoch 534: running loss = 1.233
+Test loss = 1.258, test error = 45.950 %
+
+epoch 535: running loss = 1.233
+Test loss = 1.255, test error = 45.760 %
+
+epoch 536: running loss = 1.232
+Test loss = 1.258, test error = 45.800 %
+
+epoch 537: running loss = 1.232
+Test loss = 1.257, test error = 46.040 %
+
+epoch 538: running loss = 1.232
+Test loss = 1.257, test error = 45.880 %
+
+epoch 539: running loss = 1.231
+Test loss = 1.258, test error = 45.870 %
+
+epoch 540: running loss = 1.231
+Test loss = 1.256, test error = 45.760 %
+
+epoch 541: running loss = 1.231
+Test loss = 1.256, test error = 45.680 %
+
+epoch 542: running loss = 1.231
+Test loss = 1.255, test error = 45.700 %
+
+epoch 543: running loss = 1.231
+Test loss = 1.257, test error = 46.150 %
+
+epoch 544: running loss = 1.231
+Test loss = 1.253, test error = 45.410 %
+
+epoch 545: running loss = 1.231
+Test loss = 1.258, test error = 45.780 %
+
+epoch 546: running loss = 1.231
+Test loss = 1.254, test error = 45.640 %
+
+epoch 547: running loss = 1.232
+Test loss = 1.255, test error = 45.870 %
+
+epoch 548: running loss = 1.231
+Test loss = 1.254, test error = 45.770 %
+
+epoch 549: running loss = 1.230
+Test loss = 1.256, test error = 46.090 %
+
+epoch 550: running loss = 1.230
+Test loss = 1.256, test error = 45.910 %
+
+epoch 551: running loss = 1.232
+Test loss = 1.255, test error = 45.880 %
+
+epoch 552: running loss = 1.231
+Test loss = 1.256, test error = 45.540 %
+
+epoch 553: running loss = 1.231
+Test loss = 1.255, test error = 45.820 %
+
+epoch 554: running loss = 1.230
+Test loss = 1.256, test error = 45.500 %
+
+epoch 555: running loss = 1.229
+Test loss = 1.254, test error = 45.310 %
+
+epoch 556: running loss = 1.230
+Test loss = 1.253, test error = 45.670 %
+
+epoch 557: running loss = 1.231
+Test loss = 1.255, test error = 45.650 %
+
+epoch 558: running loss = 1.230
+Test loss = 1.256, test error = 45.810 %
+
+epoch 559: running loss = 1.230
+Test loss = 1.255, test error = 45.790 %
+
+epoch 560: running loss = 1.230
+Test loss = 1.254, test error = 45.880 %
+
+epoch 561: running loss = 1.231
+Test loss = 1.254, test error = 45.580 %
+
+epoch 562: running loss = 1.230
+Test loss = 1.253, test error = 45.960 %
+
+epoch 563: running loss = 1.231
+Test loss = 1.257, test error = 45.870 %
+
+epoch 564: running loss = 1.230
+Test loss = 1.254, test error = 45.870 %
+
+epoch 565: running loss = 1.229
+Test loss = 1.253, test error = 45.620 %
+
+epoch 566: running loss = 1.229
+Test loss = 1.255, test error = 45.550 %
+
+epoch 567: running loss = 1.230
+Test loss = 1.253, test error = 45.570 %
+
+epoch 568: running loss = 1.229
+Test loss = 1.253, test error = 45.440 %
+
+epoch 569: running loss = 1.229
+Test loss = 1.253, test error = 45.550 %
+
+epoch 570: running loss = 1.231
+Test loss = 1.253, test error = 45.580 %
+
+epoch 571: running loss = 1.230
+Test loss = 1.255, test error = 45.890 %
+
+epoch 572: running loss = 1.230
+Test loss = 1.254, test error = 45.500 %
+
+epoch 573: running loss = 1.230
+Test loss = 1.254, test error = 45.570 %
+
+epoch 574: running loss = 1.229
+Test loss = 1.252, test error = 45.640 %
+
+epoch 575: running loss = 1.230
+Test loss = 1.253, test error = 45.720 %
+
+epoch 576: running loss = 1.229
+Test loss = 1.255, test error = 45.690 %
+
+epoch 577: running loss = 1.229
+Test loss = 1.254, test error = 45.870 %
+
+epoch 578: running loss = 1.229
+Test loss = 1.253, test error = 45.650 %
+
+epoch 579: running loss = 1.228
+Test loss = 1.251, test error = 45.620 %
+
+epoch 580: running loss = 1.229
+Test loss = 1.253, test error = 45.710 %
+
+epoch 581: running loss = 1.228
+Test loss = 1.252, test error = 45.560 %
+
+epoch 582: running loss = 1.230
+Test loss = 1.253, test error = 45.750 %
+
+epoch 583: running loss = 1.229
+Test loss = 1.253, test error = 45.710 %
+
+epoch 584: running loss = 1.228
+Test loss = 1.253, test error = 45.740 %
+
+epoch 585: running loss = 1.229
+Test loss = 1.253, test error = 45.400 %
+
+epoch 586: running loss = 1.228
+Test loss = 1.254, test error = 45.640 %
+
+epoch 587: running loss = 1.229
+Test loss = 1.253, test error = 45.680 %
+
+epoch 588: running loss = 1.228
+Test loss = 1.251, test error = 45.380 %
+
+epoch 589: running loss = 1.229
+Test loss = 1.253, test error = 45.740 %
+
+epoch 590: running loss = 1.228
+Test loss = 1.253, test error = 45.830 %
+
+epoch 591: running loss = 1.228
+Test loss = 1.251, test error = 45.590 %
+
+epoch 592: running loss = 1.227
+Test loss = 1.251, test error = 45.650 %
+
+epoch 593: running loss = 1.228
+Test loss = 1.252, test error = 45.850 %
+
+epoch 594: running loss = 1.230
+Test loss = 1.253, test error = 45.500 %
+
+epoch 595: running loss = 1.229
+Test loss = 1.254, test error = 45.530 %
+
+epoch 596: running loss = 1.228
+Test loss = 1.252, test error = 45.690 %
+
+epoch 597: running loss = 1.227
+Test loss = 1.253, test error = 45.850 %
+
+epoch 598: running loss = 1.228
+Test loss = 1.255, test error = 45.570 %
+
+epoch 599: running loss = 1.228
+Test loss = 1.254, test error = 45.410 %
+
+epoch 600: running loss = 1.227
+Test loss = 1.252, test error = 45.640 %
+
+epoch 601: running loss = 1.227
+Test loss = 1.253, test error = 45.470 %
+
+epoch 602: running loss = 1.228
+Test loss = 1.252, test error = 45.610 %
+
