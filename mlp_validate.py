@@ -13,19 +13,7 @@ import torchvision.transforms as transforms
 import matplotlib.pyplot as plt
 import numpy as np
 
-# one layer linear model
 class Linear_Model(nn.Module):
-
-	def __init__(self, input_size, output_size):
-		super(Linear_Model, self).__init__()
-		self.fc = nn.Linear(input_size, output_size)
-
-	def forward(self, x):
-		x = self.fc(x)
-		return x
-
-# 2 layers MLP
-class MLP(nn.Module):
 
 	def __init__(self, input_size, output_size):
 		super(Linear_Model, self).__init__()
@@ -86,25 +74,23 @@ model_path = "./best_run/model.pth"
 data_path = "./data"
 
 config = yaml.load(open(config_path, "r"), Loader=yaml.FullLoader)
-device = 'cuda:0' if torch.cuda.is_available() else 'cpu'
-
+device = 'cuda:1' if torch.cuda.is_available() else 'cpu'
 model = ResNetSimCLR(**config["model"]).to(device)
-model.load_state_dict(torch.load(model_path))
+
+# x = torch.randn(2, 3, 32, 32).to(device)
+# print(model(x))
+# exit()
+
+state_dict = torch.load(model_path)
+model.load_state_dict(state_dict)
 
 lr = 0.001
-num_epoch = 90
+num_epoch = 200
 batch_size = 512
 num_classes = 10
-weight_decay = 1e-6
 
 transform = transforms.Compose(
-	[transforms.ToTensor(), ])
-
-linear = Linear_Model(512, num_classes) # Linear_Model or MLP
-linear.to(device)
-
-optimizer = optim.Adam(linear.parameters(), lr = lr, weight_decay = weight_decay)
-scheduler = optim.lr_scheduler.StepLR(optimizer, step_size = 30, gamma = 0.1)
+	[transforms.ToTensor(),]) # may need to rewrite
 
 trainset = torchvision.datasets.CIFAR10(root = data_path, train = True, download = True, transform = transform)
 testset = torchvision.datasets.CIFAR10(root = data_path, train = False, download = True, transform = transform)
@@ -112,9 +98,14 @@ testset = torchvision.datasets.CIFAR10(root = data_path, train = False, download
 trainloader = torch.utils.data.DataLoader(trainset, batch_size = batch_size, shuffle = True, num_workers = 3)
 testloader = torch.utils.data.DataLoader(testset, batch_size = batch_size, shuffle = False, num_workers = 3)
 
+linear = Linear_Model(512, num_classes)
+linear.to(device)
+
 test_error = np.zeros(num_epoch)
 
 for epoch in range(num_epoch):
+
+	optimizer = optim.Adam(linear.parameters(), lr = lr * (0.1 ** (epoch // 100)), weight_decay = 1e-6)
 
 	running_loss = train(linear, trainloader, optimizer, device, model)
 	print('epoch %d: running loss = %.3f' % (epoch + 1, running_loss))
@@ -124,7 +115,5 @@ for epoch in range(num_epoch):
 		test_error[epoch], test_loss = test(linear, testloader, device, model)
 		print('Test loss = %.3f, test error = %.3f %%\n' % (test_loss, test_error[epoch]))
 
-	scheduler.step()
-
-print("Best test error = %.3lf\n" % test_error.min())
+print("best test error: %d" % (test_error.max()))
 print(test_error)

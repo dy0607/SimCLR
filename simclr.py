@@ -38,7 +38,7 @@ class SimCLR(object):
         self.nt_xent_criterion = NTXentLoss(self.device, config['batch_size'], **config['loss'])
 
     def _get_device(self):
-        device = 'cuda' if torch.cuda.is_available() else 'cpu'
+        device = 'cuda:1' if torch.cuda.is_available() else 'cpu'
         print("Running on:", device)
         return device
 
@@ -66,7 +66,7 @@ class SimCLR(object):
 
         optimizer = torch.optim.Adam(model.parameters(), 3e-4, weight_decay=eval(self.config['weight_decay']))
 
-        scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=len(train_loader), eta_min=0,
+        scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=self.config['epochs'], eta_min=0,
                                                                last_epoch=-1)
 
         if apex_support and self.config['fp16_precision']:
