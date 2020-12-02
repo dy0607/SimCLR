@@ -1,5 +1,5 @@
-batch_size: 400
-epochs: 1000
+batch_size: 256
+epochs: 200
 eval_every_n_epochs: 1
 fine_tune_from: None
 log_every_n_steps: 50

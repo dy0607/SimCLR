@@ -18,6 +18,8 @@ class ResNetSimCLR(nn.Module):
 
 		num_ftrs = resnet.fc.in_features
 
+		self.rotation_classifier = nn.Sequential(nn.Linear(num_ftrs, 4))
+
 		self.features = nn.Sequential(*list(resnet.children())[:-1])
 
 		# projection MLP
@@ -40,3 +42,6 @@ class ResNetSimCLR(nn.Module):
 		x = F.relu(x)
 		x = self.l2(x)
 		return h, x
+
+	def get_ftrs(self):
+		return self.ftrs

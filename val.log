@@ -281,3 +281,288 @@ Best test error = 12.110
  12.23 12.2  12.17 12.18 12.19 12.19 12.19 12.19 12.17 12.18 12.18 12.18
  12.19 12.19 12.19 12.18 12.18 12.18 12.17 12.18 12.19 12.19 12.19 12.19
  12.19 12.18 12.19 12.19 12.17 12.18]
+
+
+Feature extractor: resnet18
+Files already downloaded and verified
+Files already downloaded and verified
+epoch 1: running loss = 1.090
+Test loss = 0.864, test error = 30.200 %
+
+epoch 2: running loss = 0.818
+Test loss = 0.810, test error = 28.760 %
+
+epoch 3: running loss = 0.781
+Test loss = 0.785, test error = 27.750 %
+
+epoch 4: running loss = 0.762
+Test loss = 0.772, test error = 27.360 %
+
+epoch 5: running loss = 0.746
+Test loss = 0.758, test error = 26.840 %
+
+epoch 6: running loss = 0.735
+Test loss = 0.749, test error = 26.420 %
+
+epoch 7: running loss = 0.727
+Test loss = 0.748, test error = 26.510 %
+
+epoch 8: running loss = 0.720
+Test loss = 0.735, test error = 25.970 %
+
+epoch 9: running loss = 0.711
+Test loss = 0.728, test error = 25.710 %
+
+epoch 10: running loss = 0.706
+Test loss = 0.726, test error = 25.890 %
+
+epoch 11: running loss = 0.701
+Test loss = 0.725, test error = 25.280 %
+
+epoch 12: running loss = 0.695
+Test loss = 0.727, test error = 25.970 %
+
+epoch 13: running loss = 0.693
+Test loss = 0.715, test error = 25.170 %
+
+epoch 14: running loss = 0.688
+Test loss = 0.712, test error = 25.190 %
+
+epoch 15: running loss = 0.683
+Test loss = 0.709, test error = 25.000 %
+
+epoch 16: running loss = 0.680
+Test loss = 0.705, test error = 25.020 %
+
+epoch 17: running loss = 0.678
+Test loss = 0.709, test error = 25.530 %
+
+epoch 18: running loss = 0.673
+Test loss = 0.705, test error = 24.740 %
+
+epoch 19: running loss = 0.671
+Test loss = 0.705, test error = 24.890 %
+
+epoch 20: running loss = 0.670
+Test loss = 0.707, test error = 24.640 %
+
+epoch 21: running loss = 0.668
+Test loss = 0.697, test error = 24.560 %
+
+epoch 22: running loss = 0.663
+Test loss = 0.695, test error = 24.520 %
+
+epoch 23: running loss = 0.661
+Test loss = 0.692, test error = 24.550 %
+
+epoch 24: running loss = 0.658
+Test loss = 0.693, test error = 24.170 %
+
+epoch 25: running loss = 0.656
+Test loss = 0.693, test error = 24.540 %
+
+epoch 26: running loss = 0.656
+Test loss = 0.692, test error = 24.240 %
+
+epoch 27: running loss = 0.654
+Test loss = 0.688, test error = 24.410 %
+
+epoch 28: running loss = 0.652
+Test loss = 0.685, test error = 23.990 %
+
+epoch 29: running loss = 0.650
+Test loss = 0.692, test error = 24.630 %
+
+epoch 30: running loss = 0.648
+Test loss = 0.685, test error = 23.810 %
+
+epoch 31: running loss = 0.641
+Test loss = 0.681, test error = 23.840 %
+
+epoch 32: running loss = 0.639
+Test loss = 0.681, test error = 23.870 %
+
+epoch 33: running loss = 0.640
+Test loss = 0.681, test error = 23.880 %
+
+epoch 34: running loss = 0.640
+Test loss = 0.681, test error = 23.930 %
+
+epoch 35: running loss = 0.639
+Test loss = 0.681, test error = 23.960 %
+
+epoch 36: running loss = 0.639
+Test loss = 0.680, test error = 23.780 %
+
+epoch 37: running loss = 0.638
+Test loss = 0.681, test error = 23.990 %
+
+epoch 38: running loss = 0.638
+Test loss = 0.681, test error = 23.960 %
+
+epoch 39: running loss = 0.640
+Test loss = 0.680, test error = 23.880 %
+
+epoch 40: running loss = 0.639
+Test loss = 0.680, test error = 23.870 %
+
+epoch 41: running loss = 0.638
+Test loss = 0.680, test error = 23.930 %
+
+epoch 42: running loss = 0.638
+Test loss = 0.680, test error = 23.960 %
+
+epoch 43: running loss = 0.639
+Test loss = 0.680, test error = 24.060 %
+
+epoch 44: running loss = 0.638
+Test loss = 0.679, test error = 23.890 %
+
+epoch 45: running loss = 0.638
+Test loss = 0.680, test error = 23.960 %
+
+epoch 46: running loss = 0.638
+Test loss = 0.680, test error = 23.910 %
+
+epoch 47: running loss = 0.637
+Test loss = 0.679, test error = 23.730 %
+
+epoch 48: running loss = 0.637
+Test loss = 0.680, test error = 23.900 %
+
+epoch 49: running loss = 0.638
+Test loss = 0.679, test error = 23.910 %
+
+epoch 50: running loss = 0.637
+Test loss = 0.680, test error = 23.830 %
+
+epoch 51: running loss = 0.638
+Test loss = 0.679, test error = 23.950 %
+
+epoch 52: running loss = 0.637
+Test loss = 0.679, test error = 24.020 %
+
+epoch 53: running loss = 0.636
+Test loss = 0.679, test error = 23.820 %
+
+epoch 54: running loss = 0.637
+Test loss = 0.679, test error = 23.830 %
+
+epoch 55: running loss = 0.636
+Test loss = 0.678, test error = 23.820 %
+
+epoch 56: running loss = 0.636
+Test loss = 0.679, test error = 23.970 %
+
+epoch 57: running loss = 0.636
+Test loss = 0.678, test error = 23.800 %
+
+epoch 58: running loss = 0.637
+Test loss = 0.678, test error = 23.880 %
+
+epoch 59: running loss = 0.635
+Test loss = 0.678, test error = 23.740 %
+
+epoch 60: running loss = 0.635
+Test loss = 0.678, test error = 23.790 %
+
+epoch 61: running loss = 0.634
+Test loss = 0.678, test error = 23.730 %
+
+epoch 62: running loss = 0.634
+Test loss = 0.678, test error = 23.710 %
+
+epoch 63: running loss = 0.634
+Test loss = 0.678, test error = 23.680 %
+
+epoch 64: running loss = 0.634
+Test loss = 0.678, test error = 23.730 %
+
+epoch 65: running loss = 0.634
+Test loss = 0.678, test error = 23.710 %
+
+epoch 66: running loss = 0.634
+Test loss = 0.678, test error = 23.750 %
+
+epoch 67: running loss = 0.633
+Test loss = 0.678, test error = 23.760 %
+
+epoch 68: running loss = 0.634
+Test loss = 0.677, test error = 23.780 %
+
+epoch 69: running loss = 0.634
+Test loss = 0.677, test error = 23.730 %
+
+epoch 70: running loss = 0.634
+Test loss = 0.677, test error = 23.750 %
+
+epoch 71: running loss = 0.633
+Test loss = 0.677, test error = 23.770 %
+
+epoch 72: running loss = 0.634
+Test loss = 0.677, test error = 23.730 %
+
+epoch 73: running loss = 0.634
+Test loss = 0.677, test error = 23.780 %
+
+epoch 74: running loss = 0.634
+Test loss = 0.677, test error = 23.800 %
+
+epoch 75: running loss = 0.634
+Test loss = 0.677, test error = 23.700 %
+
+epoch 76: running loss = 0.634
+Test loss = 0.677, test error = 23.750 %
+
+epoch 77: running loss = 0.634
+Test loss = 0.677, test error = 23.840 %
+
+epoch 78: running loss = 0.634
+Test loss = 0.677, test error = 23.770 %
+
+epoch 79: running loss = 0.634
+Test loss = 0.677, test error = 23.780 %
+
+epoch 80: running loss = 0.634
+Test loss = 0.677, test error = 23.710 %
+
+epoch 81: running loss = 0.634
+Test loss = 0.677, test error = 23.750 %
+
+epoch 82: running loss = 0.634
+Test loss = 0.677, test error = 23.730 %
+
+epoch 83: running loss = 0.634
+Test loss = 0.677, test error = 23.790 %
+
+epoch 84: running loss = 0.634
+Test loss = 0.677, test error = 23.800 %
+
+epoch 85: running loss = 0.634
+Test loss = 0.677, test error = 23.800 %
+
+epoch 86: running loss = 0.633
+Test loss = 0.677, test error = 23.770 %
+
+epoch 87: running loss = 0.633
+Test loss = 0.677, test error = 23.800 %
+
+epoch 88: running loss = 0.633
+Test loss = 0.677, test error = 23.790 %
+
+epoch 89: running loss = 0.634
+Test loss = 0.677, test error = 23.790 %
+
+epoch 90: running loss = 0.634
+Test loss = 0.677, test error = 23.780 %
+
+Best test error = 23.680
+
+[30.2  28.76 27.75 27.36 26.84 26.42 26.51 25.97 25.71 25.89 25.28 25.97
+ 25.17 25.19 25.   25.02 25.53 24.74 24.89 24.64 24.56 24.52 24.55 24.17
+ 24.54 24.24 24.41 23.99 24.63 23.81 23.84 23.87 23.88 23.93 23.96 23.78
+ 23.99 23.96 23.88 23.87 23.93 23.96 24.06 23.89 23.96 23.91 23.73 23.9
+ 23.91 23.83 23.95 24.02 23.82 23.83 23.82 23.97 23.8  23.88 23.74 23.79
+ 23.73 23.71 23.68 23.73 23.71 23.75 23.76 23.78 23.73 23.75 23.77 23.73
+ 23.78 23.8  23.7  23.75 23.84 23.77 23.78 23.71 23.75 23.73 23.79 23.8
+ 23.8  23.77 23.8  23.79 23.79 23.78]

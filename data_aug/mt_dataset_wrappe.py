@@ -1,6 +1,4 @@
 import numpy as np
-import torch
-import random
 from torch.utils.data import DataLoader
 from torch.utils.data.sampler import SubsetRandomSampler
 import torchvision.transforms as transforms
@@ -30,15 +28,11 @@ class DataSetWrapper(object):
         return train_loader, valid_loader
 
     def _get_simclr_pipeline_transform(self):
-        # get a set of data augmentation transformations as described in the SimCLR paper.
-        color_jitter = transforms.ColorJitter(0.8 * self.s, 0.8 * self.s, 0.8 * self.s, 0.2 * self.s)
-
-		# for CIFAR10, leave out the gaussian blur
-        data_transforms = transforms.Compose([transforms.RandomResizedCrop(size=self.input_shape[0]),
-                                              transforms.RandomHorizontalFlip(),
-                                              transforms.RandomApply([color_jitter], p=0.8),
-                                              transforms.RandomGrayscale(p=0.2),
-                                              # GaussianBlur(kernel_size=int(0.1 * self.input_shape[0])),
+		# rotations
+        data_transforms = transforms.Compose([transforms.founctional
+                                              transforms.RandomRotation(90),
+                                              transforms.RandomRotation(180),
+                                              transforms.RandomRotation(270),
                                               transforms.ToTensor()])
         return data_transforms
 
@@ -66,23 +60,8 @@ class DataSetWrapper(object):
 class SimCLRDataTransform(object):
     def __init__(self, transform):
         self.transform = transform
-        self.flip = transforms.Compose([transforms.RandomHorizontalFlip()])
-        self.to_tensor = transforms.Compose([transforms.ToTensor()])
 
     def __call__(self, sample):
-        #y = random.randint(0, 3)
-        #x = transforms.functional.rotate(sample, y * 90)
-
-        x0 = self.to_tensor(transforms.functional.rotate(self.flip(sample), 0))
-        x1 = self.to_tensor(transforms.functional.rotate(self.flip(sample), 90))
-        x2 = self.to_tensor(transforms.functional.rotate(self.flip(sample), 180))
-        x3 = self.to_tensor(transforms.functional.rotate(self.flip(sample), 270))
-
-        # if random.randint(0, 100) == 233:
-        #     print (x, y)
-
-        # xi = self.transform(sample)
-        # xj = self.transform(sample)
-        #return self.to_tensor(x), y, xi, xj
-
-        return x0, x1, x2, x3
+        x = self.transform(sample)
+        y = self.transform()
+        return x, y

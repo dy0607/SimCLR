@@ -12,7 +12,9 @@ import torchvision.transforms as transforms
 
 import matplotlib.pyplot as plt
 import numpy as np
+import os
 
+#`os.environ['CUDA_VISIBLE_DEVICES']='0, 2, 3'
 # one layer linear model
 class Linear_Model(nn.Module):
 
