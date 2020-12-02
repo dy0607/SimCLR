@@ -1,13 +1,20 @@
-batch_size: 400
-epochs: 1000
+batch_size: 256
+epochs: 500
 eval_every_n_epochs: 1
+
+cluster_every_n_epochs: 4
+n_clusters: 64
+minibatch_kmeans: False
+
 fine_tune_from: None
 log_every_n_steps: 50
 weight_decay: 1e-6
 fp16_precision: False
 
+device: "cuda:2"
+
 model:
-  out_dim: 512
+  out_dim: 256
   base_model: "resnet18"
 
 dataset:
