@@ -3,3 +3,4 @@ runs
 best_run
 __pycache__
 *.log
+logs
