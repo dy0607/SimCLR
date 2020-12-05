@@ -47,7 +47,7 @@ class SimCLR(object):
 		print("Running on:", device)
 		return device
 
-	def _step(self, model, x, xis, xjs, n_iter):
+	def _step(self, model, x, xis, xjs, n_iter, train = True):
 
 		# get the representations and the projections
 		ris, zis = model(xis)
@@ -60,6 +60,9 @@ class SimCLR(object):
 		px = F.normalize(px, dim=1)
 
 		labels = F.softmax(torch.matmul(px, self.C), dim=1)
+		dist, clusters = labels.max(dim=1)
+		loss0 = -dist.mean()
+
 		pi = F.log_softmax(torch.matmul(zis, self.C), dim=1)
 		pj = F.log_softmax(torch.matmul(zjs, self.C), dim=1)
 		# print(pi, pj, labels)
@@ -71,7 +74,11 @@ class SimCLR(object):
 		# print(loss2)
 		# exit()
 
-		return loss1 + loss2
+		if n_iter % self.config['log_every_n_steps'] == 0 and train:
+			self.writer.add_scalar('loss0', -loss0, global_step=n_iter)
+			self.writer.add_scalar('loss1', loss1, global_step=n_iter)
+
+		return loss0 + loss1 + loss2
 
 	def _get_clustering(self, model, dataloader):
 
@@ -220,7 +227,7 @@ class SimCLR(object):
 				xis = xis.to(self.device)
 				xjs = xjs.to(self.device)
 
-				loss = self._step(model, x, xis, xjs, counter)
+				loss = self._step(model, x, xis, xjs, counter, train = False)
 				valid_loss += loss.item()
 				counter += 1
 			valid_loss /= counter
