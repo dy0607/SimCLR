@@ -89,16 +89,23 @@ config = yaml.load(open(config_path, "r"), Loader=yaml.FullLoader)
 device = 'cuda:0' if torch.cuda.is_available() else 'cpu'
 
 model = ResNetSimCLR(**config["model"]).to(device)
-model.load_state_dict(torch.load(model_path))
+model.load_state_dict(torch.load(model_path, map_location={'cuda:0':device, 'cuda:1':device, 'cuda:2':device, 'cuda:3':device}))
 
 lr = 0.001
 num_epoch = 90
-batch_size = 512
+batch_size = 256
 num_classes = 10
 weight_decay = 1e-6
 
-transform = transforms.Compose(
+training_set_size = 50000
+
+base_transform = transforms.Compose(
 	[transforms.ToTensor(), ])
+
+train_transform = transforms.Compose(
+	[transforms.RandomHorizontalFlip(),
+	 transforms.RandomGrayscale(p=0.2),
+	 transforms.ToTensor()])
 
 linear = Linear_Model(512, num_classes) # Linear_Model or MLP
 linear.to(device)
@@ -106,13 +113,16 @@ linear.to(device)
 optimizer = optim.Adam(linear.parameters(), lr = lr, weight_decay = weight_decay)
 scheduler = optim.lr_scheduler.StepLR(optimizer, step_size = 30, gamma = 0.1)
 
-trainset = torchvision.datasets.CIFAR10(root = data_path, train = True, download = True, transform = transform)
-testset = torchvision.datasets.CIFAR10(root = data_path, train = False, download = True, transform = transform)
+trainset = torchvision.datasets.CIFAR10(root = data_path, train = True, download = True, transform = train_transform)
+trainset, valset = torch.utils.data.random_split(trainset, [training_set_size, 50000 - training_set_size])
+
+testset = torchvision.datasets.CIFAR10(root = data_path, train = False, download = True, transform = base_transform)
 
 trainloader = torch.utils.data.DataLoader(trainset, batch_size = batch_size, shuffle = True, num_workers = 3)
 testloader = torch.utils.data.DataLoader(testset, batch_size = batch_size, shuffle = False, num_workers = 3)
 
 test_error = np.zeros(num_epoch)
+train_error = np.zeros(num_epoch)
 
 for epoch in range(num_epoch):
 
@@ -122,7 +132,10 @@ for epoch in range(num_epoch):
 	with torch.no_grad():
 
 		test_error[epoch], test_loss = test(linear, testloader, device, model)
-		print('Test loss = %.3f, test error = %.3f %%\n' % (test_loss, test_error[epoch]))
+		print('Test loss = %.3f, test error = %.3f %%' % (test_loss, test_error[epoch]))
+
+		train_error[epoch], train_loss = test(linear, trainloader, device, model)
+		print('Training loss = %.3f, test error = %.3f %%\n' % (train_loss, train_error[epoch]))
 
 	scheduler.step()
 

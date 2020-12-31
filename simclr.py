@@ -41,45 +41,52 @@ class SimCLR(object):
 		
 		self.criterion = torch.nn.KLDivLoss(reduction="batchmean")
 		self.nt_xent_criterion = NTXentLoss(self.device, config['batch_size'], **config['loss'])
+		self.loss_weights = eval(self.config['coef'])
 
 	def _get_device(self):
 		device = self.config['device'] if torch.cuda.is_available() else 'cpu'
 		print("Running on:", device)
 		return device
 
-	def _step(self, model, x, xis, xjs, n_iter, train = True):
+	def _step(self, model, x, xis, xjs, n_iter, train = True, warm_up = False):
 
-		# get the representations and the projections
+		# get the representations and the projections, then normalize
 		ris, zis = model(xis)
 		rjs, zjs = model(xjs)
-		rx, px = model(x)
 
-		# normalize projection feature vectors
 		zis = F.normalize(zis, dim=1)
 		zjs = F.normalize(zjs, dim=1)
-		px = F.normalize(px, dim=1)
-
-		labels = F.softmax(torch.matmul(px, self.C), dim=1)
-		dist, clusters = labels.max(dim=1)
-		loss0 = -dist.mean()
-
-		pi = F.log_softmax(torch.matmul(zis, self.C), dim=1)
-		pj = F.log_softmax(torch.matmul(zjs, self.C), dim=1)
-		# print(pi, pj, labels)
 		
-		loss1 = self.criterion(pi, labels) + self.criterion(pj, labels)
-		loss2 = self.nt_xent_criterion(zis, zjs)
+		loss = 0
 
-		# print("x", loss1)
-		# print(loss2)
-		# exit()
+		if self.loss_weights[2] != 0:
+			loss = self.loss_weights[2] * self.nt_xent_criterion(zis, zjs)
+		
+		if not warm_up:
+		
+			rx, px = model(x)
+			px = F.normalize(px, dim=1)
 
-		if n_iter % self.config['log_every_n_steps'] == 0 and train:
-			self.writer.add_scalar('loss0', -loss0, global_step=n_iter)
-			self.writer.add_scalar('loss1', loss1, global_step=n_iter)
+			temp = self.config['tau']
 
-		return loss0 + loss1 + loss2
+			labels = F.softmax(torch.matmul(px, self.C) / temp, dim=1)
+			dist, clusters = labels.max(dim=1)
 
+			loss0 = -torch.log(dist).mean()
+
+			pi = F.log_softmax(torch.matmul(zis, self.C) / temp, dim=1)
+			pj = F.log_softmax(torch.matmul(zjs, self.C) / temp, dim=1)
+			
+			loss1 = self.criterion(pi, labels) + self.criterion(pj, labels)
+
+			if n_iter % self.config['log_every_n_steps'] == 0 and train:
+				self.writer.add_scalar('loss0', loss0, global_step=n_iter)
+				self.writer.add_scalar('loss1', loss1, global_step=n_iter)
+
+			loss = loss + self.loss_weights[0] * loss0 + self.loss_weights[1] * loss1
+
+		return loss
+	
 	def _get_clustering(self, model, dataloader):
 
 		with torch.no_grad():
@@ -126,7 +133,6 @@ class SimCLR(object):
 			self.cluster_n_iter += 1
 
 			print(count)
-			print(self.C)
 
 	def train(self):
 
@@ -158,14 +164,14 @@ class SimCLR(object):
 
 		for epoch_counter in range(self.config['epochs']):
 
-			if epoch_counter % self.config['cluster_every_n_epochs'] == 0:
+			if epoch_counter % self.config['cluster_every_n_epochs'] == 0 and epoch_counter + self.config['cluster_every_n_epochs'] > self.config['warm_up']:
 				self._get_clustering(model, clustering_loader)
 
-			self._train(model, optimizer, train_loader)
+			self._train(model, optimizer, train_loader, epoch_counter)
 
 			# validate the model if requested
 			if epoch_counter % self.config['eval_every_n_epochs'] == 0:
-				valid_loss = self._validate(model, valid_loader)
+				valid_loss = self._validate(model, valid_loader, epoch_counter)
 				if valid_loss < best_valid_loss:
 					# save the model weights
 					best_valid_loss = valid_loss
@@ -190,7 +196,7 @@ class SimCLR(object):
 
 		return model
 
-	def _train(self, model, optimizer, train_loader):
+	def _train(self, model, optimizer, train_loader, epoch):
 		for (x, xis, xjs), _ in train_loader:
 			
 			optimizer.zero_grad()
@@ -199,7 +205,7 @@ class SimCLR(object):
 			xis = xis.to(self.device)
 			xjs = xjs.to(self.device)
 
-			loss = self._step(model, x, xis, xjs, self.n_iter)
+			loss = self._step(model, x, xis, xjs, self.n_iter, warm_up = epoch < self.config['warm_up'])
 
 			if self.n_iter % self.config['log_every_n_steps'] == 0:
 				self.writer.add_scalar('train_loss', loss, global_step=self.n_iter)
@@ -213,7 +219,7 @@ class SimCLR(object):
 			optimizer.step()
 			self.n_iter += 1
 
-	def _validate(self, model, valid_loader):
+	def _validate(self, model, valid_loader, epoch):
 
 		# validation steps
 		with torch.no_grad():
@@ -227,7 +233,7 @@ class SimCLR(object):
 				xis = xis.to(self.device)
 				xjs = xjs.to(self.device)
 
-				loss = self._step(model, x, xis, xjs, counter, train = False)
+				loss = self._step(model, x, xis, xjs, counter, train = False, warm_up = epoch < self.config['warm_up'])
 				valid_loss += loss.item()
 				counter += 1
 			valid_loss /= counter

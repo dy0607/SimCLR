@@ -5,13 +5,14 @@ eval_every_n_epochs: 1
 cluster_every_n_epochs: 4
 n_clusters: 64
 minibatch_kmeans: False
+warm_up: 0
 
 fine_tune_from: None
 log_every_n_steps: 50
 weight_decay: 1e-6
 fp16_precision: False
 
-device: "cuda:2"
+device: "cuda:3"
 
 model:
   out_dim: 256
@@ -26,3 +27,6 @@ dataset:
 loss:
   temperature: 0.5
   use_cosine_similarity: True
+
+tau: 0.5
+coef: "[2, 4, 1]"

@@ -58,7 +58,7 @@ class DataSetWrapper(object):
 
 		# base transform, used for clustering
 		base_transform = transforms.Compose([transforms.RandomHorizontalFlip(),
-										  # transforms.RandomApply([color_jitter], p=0.8),
+										    transforms.RandomApply([color_jitter], p=0.5),
 										  # transforms.RandomGrayscale(p=0.2),
 										  # GaussianBlur(kernel_size=int(0.1 * self.input_shape[0])),
 										  transforms.ToTensor()])
